@@ -66,6 +66,14 @@
     margin-right: auto;
     text-transform: uppercase;
   }
+
+
+  .body {
+    font-family: proxima-nova, sans-serif;
+    font-style: bold;
+    font-weight: 100;
+  }
+
   
   .jumbotron {
     height: 300px;
