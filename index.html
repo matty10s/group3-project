@@ -1,1 +1,42 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matt Kopay Assignment 10 ORGANIZED CSS STYLES</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="webpage">
+  <header class="header">
+    <nav class="menu">
+      <a href="#" class="link menu__logo">Company Name</a>
+      <a href="#" class="link menu__link">Home</a>
+      <a href="#" class="link menu__link">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="jumbotron">
+      <p class="jumbotron__main-text">This is a call to action. It makes you want to click the button below.</p>
+      <button class="jumbotron__button">click now</button>
+    </section>
+    <article class="article">
+      <h1 class="heading article__heading">Main Heading</h1>
+      <p class="article__main-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel praesentium dolores perspiciatis officia iure dignissimos hic ex saepe, tenetur suscipit corrupti delectus quos porro blanditiis neque vitae similique alias quo.<a href="#" class="link main-text__link">ad id nobis aspernatur deleniti!</a> Dolorem totam quam fugiat, iste, recusandae quod voluptate a maiores numquam sapiente velit consectetur necessitatibus possimus natus fugit aut assumenda corrupti magnam. Sequi voluptatibus cumque, commodi at sit facere dicta sed eaque, eligendi consectetur asperiores fuga odio ab saepe incidunt obcaecati perferendis, iure reprehenderit accusantium ipsum dolorum aperiam neque. Corrupti vitae tempora repellendus numquam! Veniam quasi eius eum ratione natus doloremque recusandae consequuntur exercitationem?</p>
+      <img src="https://picsum.photos/500/500" class="article__image" alt="random image">
+      <p class="article__main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium mollitia, consequatur eaque, odio repellat optio quis dolore dolorem laboriosam voluptatibus, aliquam beatae debitis sequi minus expedita accusantium distinctio voluptas maiores modi ad id nobis aspernatur deleniti! Dolorem, totam quam fugiat iste, recusandae quod voluptate a maiores numquam sapiente velit consectetur necessitatibus possimus natus fugit aut assumenda corrupti magnam. Sequi <a href="#" class="link main-text__link">voluptatibus</a> cumque, commodi at sit facere dicta sed eaque, eligendi consectetur asperiores fuga odio ab saepe incidunt obcaecati perferendis, iure reprehenderit accusantium ipsum dolorum aperiam neque. Corrupti vitae tempora repellendus numquam! Veniam quasi eius eum ratione natus doloremque recusandae consequuntur exercitationem?</p>
+      <h2 class="heading article__subheading">Subheading</h2>
+      <p class="article__main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium mollitia, consequatur eaque, odio repellat optio quis dolore dolorem laboriosam voluptatibus, aliquam beatae debitis sequi minus expedita accusantium distinctio voluptas maiores modi ad id nobis aspernatur deleniti! Dolorem, totam quam fugiat iste, recusandae quod voluptate a maiores numquam sapiente velit consectetur necessitatibus possimus natus fugit aut assumenda corrupti magnam. Sequi voluptatibus cumque, commodi at sit facere dicta sed eaque, eligendi consectetur asperiores fuga odio ab saepe incidunt obcaecati perferendis, iure reprehenderit accusantium ipsum dolorum aperiam neque. <a class="link main-text__link" href="#">Corrupti</a> vitae tempora repellendus numquam! Veniam quasi eius eum ratione natus doloremque recusandae consequuntur exercitationem?</p>
+    </article>
+  </main>
+  <footer class="footer">
+    &copy; company name <span id="year"></span>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear()
+  </script>
+</body>
+</html>
