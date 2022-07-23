@@ -2,7 +2,7 @@
     --primary-color: #02733f;
     --text-color: #02733f;
     --text-color-lighter: #b7d9ab;
-    --secondary-color: #b7d9ab;
+    --secondary-color: #47a647;
     --warn-color: #FDD219;
     --danger-color: #FA5456;
     --white: #FFFFFF;
@@ -14,7 +14,7 @@
     font-family: 'Roboto', sans-serif;
     margin: 0;
     font-size: 1.3rem;
-    color: var(--text-color);
+    color: var(--primary-color);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -38,9 +38,9 @@
   }
   
   .header {
-    background-color: var(--primary-color);
-    padding: 48px 0;
-    border-bottom: var(--secondary-color) 6px solid;
+    background-color: var(--text-color-lighter);
+    padding: 24px 0;
+    border-bottom: var(--primary-color) 6px solid;
   }
   
   .main-text__link {
@@ -56,7 +56,7 @@
   
   .menu__link {
     font-size: 1.5rem;
-    color: var(--off-white);
+    color: var(--text-color);
     margin-left: 24px;
   }
   
@@ -67,17 +67,15 @@
     text-transform: uppercase;
   }
 
-
   .body {
     font-family: proxima-nova, sans-serif;
     font-style: bold;
     font-weight: 100;
   }
 
-  
   .jumbotron {
-    height: 300px;
-    background-image: url(https://picsum.photos/1920/1000);
+    min-height: 400px;
+    background-image: url(images/home-castpic.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -85,7 +83,7 @@
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    margin-bottom: 96px;
+    margin-bottom: 24px;
     box-shadow: 4px 4px 10px var(--gray);
     background-color: var(--white);
   }
@@ -100,6 +98,7 @@
   
   .jumbotron__button {
     background-color: var(--secondary-color);
+    color: var(--off-white);
     border: none;
     padding: 12px 24px;
     border-radius: 12px;
@@ -112,7 +111,7 @@
     margin: 0 auto;
     box-sizing: border-box;
     padding: 48px 96px;
-    margin-bottom: 96px;
+    margin-bottom: 24px;
     box-shadow: 4px 4px 10px var(--gray);
     background-color: var(--white);
   }
@@ -132,9 +131,11 @@
   
   .footer {
     margin-top: auto;
-    background-color: var(--gray);
+    background-color: var(--text-color-lighter);
     text-align: center;
     text-transform: uppercase;
+    font-size: small;
     padding: 24px 0;
-    color: var(--off-white);
+    color: var(--text-color);
+    border-top: var(--primary-color) 6px solid;
   }
