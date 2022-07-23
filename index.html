@@ -5,13 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MMC5277 Group 3 Project TV Show Home Page</title>
-  <style>
-    body {
-      font-family: proxima-nova, sans-serif;
-      font-style: bold;
-      font-weight: 100;
-    }
-  </style>
   <link rel="preload" href="https://use.typekit.net/dwg7avv.css" as="style" crossorigin>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -19,28 +12,36 @@
   <header class="header">
     <nav class="menu">
       <a href="#" class="link menu__logo"> <img src=".\images\ParksRec_logo.png" alt="Parks and Rec Logo" width="300"></a>
-      <a href="#" class="link menu__link">Home</a>
-      <a href="#" class="link menu__link">Plot Points</a>
-      <a href="#" class="link menu__link">Cast</a>
-      <a href="#" class="link menu__link">Trivia</a>
+      <a href="index.html" class="link menu__link">Home</a>
+      <a href="episodes.html" class="link menu__link">Plot Points</a>
+      <a href="cast.html" class="link menu__link">Cast</a>
+      <a href="trivia.html" class="link menu__link">Trivia</a>
     </nav>
   </header>
   <main>
     <section class="jumbotron">
-      <p class="jumbotron__main-text">This is a call to action. It makes you want to click the button below.</p>
-      <button class="jumbotron__button">click now</button>
+      <p class="jumbotron__main-text">Put this in a box or move lower to make it easier to read. Plug Cast page.</p>
+      <button class="jumbotron__button">Meet the Cast</button>
     </section>
     <article class="article">
-      <h1 class="heading article__heading">Main Heading</h1>
-      <p class="article__main-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel praesentium dolores perspiciatis officia iure dignissimos hic ex saepe, tenetur suscipit corrupti delectus quos porro blanditiis neque vitae similique alias quo.<a href="#" class="link main-text__link">ad id nobis aspernatur deleniti!</a> Dolorem totam quam fugiat, iste, recusandae quod voluptate a maiores numquam sapiente velit consectetur necessitatibus possimus natus fugit aut assumenda corrupti magnam. Sequi voluptatibus cumque, commodi at sit facere dicta sed eaque, eligendi consectetur asperiores fuga odio ab saepe incidunt obcaecati perferendis, iure reprehenderit accusantium ipsum dolorum aperiam neque. Corrupti vitae tempora repellendus numquam! Veniam quasi eius eum ratione natus doloremque recusandae consequuntur exercitationem?</p>
+      <h1 class="heading article__heading">Parks & Recreation</h1>
+      <p class="article__main-text">Praise/info on show. Blah blah blah.</p>
+      <p>Blah blah blah.</p>
+    <article class="article2">
+      <h1>Plot Points</h1>
       <img src="https://picsum.photos/500/500" class="article__image" alt="random image">
-      <p class="article__main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium mollitia, consequatur eaque, odio repellat optio quis dolore dolorem laboriosam voluptatibus, aliquam beatae debitis sequi minus expedita accusantium distinctio voluptas maiores modi ad id nobis aspernatur deleniti! Dolorem, totam quam fugiat iste, recusandae quod voluptate a maiores numquam sapiente velit consectetur necessitatibus possimus natus fugit aut assumenda corrupti magnam. Sequi <a href="#" class="link main-text__link">voluptatibus</a> cumque, commodi at sit facere dicta sed eaque, eligendi consectetur asperiores fuga odio ab saepe incidunt obcaecati perferendis, iure reprehenderit accusantium ipsum dolorum aperiam neque. Corrupti vitae tempora repellendus numquam! Veniam quasi eius eum ratione natus doloremque recusandae consequuntur exercitationem?</p>
-      <h2 class="heading article__subheading">Meet the Cast</h2>
-      <p class="article__main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium mollitia, consequatur eaque, odio repellat optio quis dolore dolorem laboriosam voluptatibus, aliquam beatae debitis sequi minus expedita accusantium distinctio voluptas maiores modi ad id nobis aspernatur deleniti! Dolorem, totam quam fugiat iste, recusandae quod voluptate a maiores numquam sapiente velit consectetur necessitatibus possimus natus fugit aut assumenda corrupti magnam. Sequi voluptatibus cumque, commodi at sit facere dicta sed eaque, eligendi consectetur asperiores fuga odio ab saepe incidunt obcaecati perferendis, iure reprehenderit accusantium ipsum dolorum aperiam neque. <a class="link main-text__link" href="#">Corrupti</a> vitae tempora repellendus numquam! Veniam quasi eius eum ratione natus doloremque recusandae consequuntur exercitationem?</p>
+      <p class="article__main-text">Plug for Trivia Page. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos vero at cum, explicabo sint corporis sequi possimus culpa officia adipisci ex quisquam molestiae pariatur, commodi aliquam voluptate quae dolore nemo.</p>
+      <button class="jumbotron__button">Plot Points</button>
+    </article>
+    <article class="article2">
+      <h1>Trivia</h1>
+      <img src="https://picsum.photos/500/500" class="article__image" alt="random image">
+      <p class="article__main-text">Plug for Trivia Page. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos vero at cum, explicabo sint corporis sequi possimus culpa officia adipisci ex quisquam molestiae pariatur, commodi aliquam voluptate quae dolore nemo.</p>
+      <button class="jumbotron__button">Trivia</button>
     </article>
   </main>
   <footer class="footer">
-    &copy; company name <span id="year"></span>
+    &copy; MMC 5277 Group 3: Matthew Kopay, Taylor Baumgardner, Shannon Kuhn <span id="year"></span>
   </footer>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear()
