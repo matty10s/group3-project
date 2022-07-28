@@ -18,22 +18,17 @@ html, body {
     --gray: #A1A1A1;
   }
 
-  .body {
+  .webpage {
     font-family: 'Haboro Soft', 'Arial', sans-serif;
-    font-size: 1.2rem;
     margin: 0;
-    box-sizing: border-box;
+    font-size: 1.3rem;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
-    display: grid;
-    grid-template-columns: 20vw 80vw;
-    gap: 50px;
-    grid-template-areas:
-      "header header"
-      "nav img-container"
-      "footer footer";
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23a1a1a1' fill-opacity='0.59' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
   }
-
-    
+  
   .article__heading {
     font-size: 2.5rem;
   }
@@ -55,32 +50,9 @@ html, body {
     padding: 48px 0;
     border-bottom: var(--secondary-color) 6px solid;
   }
-
-  .article__heading {
-    font-size: 2.5rem;
-    text-align: center;
-  }
-  
-  .article__subheading {
-    font-size: 1.5rem;
-  }
-  
-  .link {
-    text-decoration: none;
-  }
-  
-  .link:hover {
-    text-decoration: underline;
-  }
-  
-  .header {
-    background-color: var(--text-color-lighter);
-    padding: 24px 0;
-    border-bottom: var(--primary-color) 6px solid;
-  }
   
   .main-text__link {
-    color: var(--link-color);
+    color: var(--danger-color);
   }
   
   .menu {
@@ -88,14 +60,12 @@ html, body {
     max-width: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 0 24px;
   }
   
   .menu__link {
     font-size: 1.5rem;
-    color: var(--text-color);
+    color: var(--off-white);
     margin-left: 24px;
-    margin-top: 42px;
   }
   
   .menu__logo {
@@ -103,29 +73,6 @@ html, body {
     color: var(--off-white);
     margin-right: auto;
     text-transform: uppercase;
-  }
-  
-  .body {
-    font-family: 'Haboro Soft Ext Book', sans-serif;
-    font-style: bold;
-    font-weight: 100;
-  }
-
-
-  .webpage {
-    font-family: 'Haboro Soft', 'Arial', sans-serif;
-    margin: 0;
-    font-size: 1.3rem;
-    color: var(--primary-color);
-    display: flex;
-    flex-direction: column;
-
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 24px;
-    box-shadow: 4px 4px 10px var(--gray);
-    background-color: var(--white);
   }
   
   .jumbotron {
@@ -142,7 +89,7 @@ html, body {
     box-shadow: 4px 4px 10px var(--gray);
     background-color: var(--white);
   }
-
+  
   .jumbotron__main-text {
     font-size: 2rem;
     font-weight: 700;
@@ -159,7 +106,7 @@ html, body {
     text-transform: uppercase;
     cursor: pointer;
   }
-
+  
   .article {
     max-width: 1200px;
     margin: 0 auto;
@@ -172,7 +119,7 @@ html, body {
   
   .article__main-text {
     line-height: 1.75;
-    margin-bottom: 24px;
+    margin-bottom: 48px;;
   }
   
   .article__image {
@@ -183,59 +130,11 @@ html, body {
     margin-bottom: 6px;
   }
   
-  .container {
-    max-width: 1200px;
-    margin: 24px auto;
-    box-sizing: border-box;
-    padding: 24px 96px 96px;
-    margin-bottom: 24px;
-    box-shadow: 4px 4px 10px var(--gray);
-    background-color: var(--white);
-  }
-
-  .box_text {
-    max-width: 900px;
-    border: var(--text-color-lighter) 6px solid;
-    background-color: var(--primary-color);
-    padding: 0 24px 48px;
-    margin: 0 auto;
-    align-items: center;
-    text-align: center;
-    color: #eae3cf;
-  }
-
-  .aside {
-    padding: 6px 0 12px;
-  }
-  
-  .button {
-    align-items: center;
-    background-color: var(--secondary-color);
-    color: var(--white);
-    border: none;
-    padding: 12px 24px;
-    border-radius: 12px;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-size: 1.2rem;
-  }
-
-  .list__image1, .list__image2, .list__image3 {
-    max-width: 400px;
-    height: auto;
-    margin: 0 auto;
-  }
-
   .footer {
     margin-top: auto;
-    background-color: var(--text-color-lighter);
+    background-color: var(--gray);
     text-align: center;
-    font-size: small;
-    padding: 12px 0 24px;
-    color: var(--text-color);
-    border-top: var(--primary-color) 6px solid;
-
-    min-height: 100vh;
-    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23a1a1a1' fill-opacity='0.59' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
-
+    text-transform: uppercase;
+    padding: 24px 0;
+    color: var(--off-white);
   }
