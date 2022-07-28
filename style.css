@@ -125,9 +125,10 @@
 
 .footer {
   margin-top: auto;
-  background-color: var(--gray);
+  background-color: var(--text-color-lighter);
   text-align: center;
-  text-transform: uppercase;
-  padding: 24px 0;
-  color: var(--off-white);
+  font-size: small;
+  padding: 12px 0 24px;
+  color: var(--text-color);
+  border-top: var(--primary-color) 6px solid;
 }
