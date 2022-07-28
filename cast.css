@@ -126,7 +126,7 @@ img {
 	z-index: 1;
 	grid-column: span 2;
 	max-width: 100%;
-	margin-bottom: -52%;
+	margin-bottom: 0%;
 	transform: scale(1);
 	transition: all .25s;
 }
@@ -139,6 +139,47 @@ img:hover {
 	z-index: 2;
 	transform: scale(2);
 }
+
+
+/* (A) WRAPPER */
+.hoverwrap {
+  position: relative; /* required for (c2) */
+  max-width: 500px;   /* optional */
+}
+
+/* (B) RESPONSIVE IMAGE */
+.hoverwrap img { width: 100%; }
+
+/* (C) CAPTION */
+.hovercap {
+  /* (C1) DIMENSIONS */
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px;
+
+  /* (C2) PLACE AT BOTTOM */
+  position: absolute;
+  bottom: 0; left: 0;
+
+  /* (C3) COLORS */
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+/* (D) SHOW/HIDE */
+.hovercap {
+  visibility: none; opacity: 0;
+  transition: opacity 0.3s;
+}
+.hoverwrap:hover .hovercap {
+  visibility: visible; opacity: 1;
+}
+
+html, body {
+  font-family: 'Haboro Soft', 'Arial', sans-serif;
+  padding: 0; margin: 0;
+}
+
 
 .footer {
     margin-top: auto;
