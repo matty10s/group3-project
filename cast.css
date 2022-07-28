@@ -18,6 +18,14 @@ html, body {
     --gray: #A1A1A1;
   }
 
+  .header {
+    background-color: var(--text-color-lighter);
+    align-items: baseline;
+    padding: 24px 0;
+    border-bottom: var(--primary-color) 6px solid;
+  }
+
+
   .body {
     font-family: 'Haboro Soft', 'Arial', sans-serif;
     font-size: 1.2rem;
