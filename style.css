@@ -10,6 +10,21 @@
     --off-white: #eae3cf;
     --gray: #A1A1A1;
   }
+
+  .body {
+    font-family: 'Haboro Soft', 'Arial', sans-serif;
+    font-size: 1.2rem;
+    margin: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 20vw 80vw;
+    gap: 50px;
+    grid-template-areas:
+      "header header"
+      "nav img-container"
+      "footer footer";
+  }
   
   .webpage {
     font-family: 'Haboro Soft', 'Arial', sans-serif;
@@ -143,6 +158,8 @@
     font-size: 1.2rem;
   }
 
+  
+
   .footer {
     margin-top: auto;
     background-color: var(--text-color-lighter);
@@ -151,4 +168,85 @@
     padding: 12px 0 24px;
     color: var(--text-color);
     border-top: var(--primary-color) 6px solid;
+  }
+
+  @media screen and (max-width: 1100px) {
+    .body__grid-container {
+      grid-template-columns: 100vw;
+      grid-template-areas:
+        "header"
+        "nav"
+        "img-container"
+        "footer";
+    }
+  
+    .header__title {
+      font-size: 2rem;
+    }
+  
+    .nav {
+      padding: 0px;
+      margin: 0 auto;
+    }
+  
+    .nav__container {
+      width: 80vw;
+      min-width: 300px;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .nav__link,
+    .nav__link--active {
+      text-decoration: underline;
+    }
+    .nav__link--active {
+      padding: 0;
+    }
+    .nav__link::after,
+    .nav__link--active::after {
+      display: none;
+    }
+  
+
+    html {
+      box-sizing: border-box;
+    }
+    
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+
+    .container {
+      padding: 0 16px;
+    }
+    
+    .container::after, .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    .img_card {
+      width: 300px;
+      box-shadow: var(--gray) 4px 4px 10px 2px;
+      border-radius: 3px;
+      background-color: #eae3cf;
+    }
+    
+    .img_card__img {
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+    }
+    
+    .img_card__text {
+      padding: 0 12px;
+    }
+
+    .column {
+      float: left;
+      width: 33.3%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
+  
+
   }
