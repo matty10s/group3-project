@@ -127,9 +127,10 @@
 .img__animation {
 	z-index: 1;
 	grid-column: span 2;
-	max-width: 150px;
+	max-width: 250px;
 	margin-bottom: 0%;
-	transform: scale(1);
+	border: 5px solid #555;
+  transform: scale(1);
 	transition: all .25s;
 }
 
