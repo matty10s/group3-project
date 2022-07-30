@@ -115,11 +115,11 @@
 	position:relative;
 	flex-grow: 1;
 	margin: auto;
-	max-width: 800px;
+	max-width: 900px;
 	max-height: 2000px;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
 	grid-gap: 2vmin;
 	justify-items: center;
 	align-items: center;
@@ -130,7 +130,7 @@
 	grid-column: span 2;
 	max-width: 250px;
 	margin-bottom: 0%;
-	border: 5px solid #555;
+	border: 2px solid #555;
   transform: scale(1);
 	transition: all .25s;
 }
