@@ -215,9 +215,10 @@
   color: var(--link-color);
 }
 
-.list__image1, .list__image2, .list__image3 {
+.list__image {
   max-width: 400px;
   height: auto;
+  display: block;
   margin: 0 auto;
   padding: 12px;
 }
