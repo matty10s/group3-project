@@ -115,8 +115,8 @@ html, body {
 	max-width: 1200px;
 	max-height: 1200px;
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(4, 1fr);
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
 	grid-gap: 2vmin;
 	justify-items: center;
 	align-items: center;
