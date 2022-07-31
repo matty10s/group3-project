@@ -6,7 +6,9 @@ Link to LIVE site: https://matty10s.github.io/group3-project/
 Commit Discrepancy: 
 As the team lead, I would say that we all worked very hard and evenly on the project. 
 Matt has more commits in more one sitting (small changes) versus Shannon and Taylor would do a lot more changes in one commit. 
-Matt would submit multiple commits in one sitting for small and specific chunks of work, whereas Taylor and I would do broad work that changed multiple things and submit them all in one large commit.
+Matt would submit multiple commits in one sitting for small and specific chunks of work, whereas Taylor and Shannon would do broad work that changed multiple things and submit them all in one large commit.
+
+A lot of the commits were done on behalf of Shannon and Taylor at times because I was the assigned group leader.   -Matt
 
 Stumbling Blocks:
 
